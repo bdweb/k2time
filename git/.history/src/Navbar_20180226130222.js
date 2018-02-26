@@ -7,37 +7,39 @@ export default class Header extends React.Component{
     return(
 
       <header>
-
-<Navbar  collapseOnSelect > 
+   <Navbar inverse collapseOnSelect bsClass="navbar navbar-default">
   <Navbar.Header>
-    <Navbar.Brand className="navbar-brand">
-    <a href="index.html"><h1><span>Com</span>pany</h1></a>
+    <Navbar.Brand>
+      <a href="#brand">React-Bootstrap</a>
     </Navbar.Brand>
     <Navbar.Toggle />
   </Navbar.Header>
-  <Navbar.Collapse className="navigation">
+  <Navbar.Collapse>
+    <Nav>
+      <NavItem eventKey={1} href="#">
+        Link
+      </NavItem>
+      <NavItem eventKey={2} href="#">
+        Link
+      </NavItem>
+        </Nav>
     <Nav pullRight>
-    <NavItem eventKey={2} href="#">
-    <NavLink exact  to="/" activeClassName="active">Home</NavLink >
+      <NavItem eventKey={1} href="#">
+        Link Right
       </NavItem>
       <NavItem eventKey={2} href="#">
-      <NavLink to="/about" activeClassName="active">About Us</NavLink>
-      </NavItem>
-      <NavItem eventKey={2} href="#">
-      <NavLink to="/industrial" activeClassName="active">Industrial</NavLink>
-      </NavItem>
-      <NavItem eventKey={2} href="#">
-      <NavLink to="/services" activeClassName="active">Services</NavLink>
-      </NavItem>
-      <NavItem eventKey={2} href="#">
-      <NavLink to="/portfolio" activeClassName="active">Portfolio</NavLink>
+        Link Right
       </NavItem>
     </Nav>
   </Navbar.Collapse>
 </Navbar>;
 
-
-    {/* <nav className="navbar navbar-default  navbar-fixed-top">
+<br/>
+<br/>
+<br/>
+<br/>
+{/* navbar-fixed-top */}
+    <nav className="navbar navbar-default">
       <div className="navigation">
         <div className="container">
           <div className="navbar-header">
@@ -75,7 +77,7 @@ export default class Header extends React.Component{
           </div>
         </div>
       </div>
-    </nav> */}
+    </nav>
   </header>
           //  <div id="breadcrumb">
           //   <div className="container">

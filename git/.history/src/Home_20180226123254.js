@@ -1,10 +1,12 @@
 import React from 'react';
 import $ from 'jquery';
 import {WOW} from 'wowjs/dist/wow';
-
+import  Navbar  from 'react-bootstrap';
 export default class Home extends React.Component{
   componentDidMount() { 
     new WOW().init();
+
+    
    };
    
   render(){

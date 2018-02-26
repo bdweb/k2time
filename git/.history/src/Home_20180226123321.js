@@ -5,6 +5,8 @@ import {WOW} from 'wowjs/dist/wow';
 export default class Home extends React.Component{
   componentDidMount() { 
     new WOW().init();
+
+    
    };
    
   render(){

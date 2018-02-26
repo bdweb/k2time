@@ -18,20 +18,18 @@ import Contact from './Contact';
 import Header from './Navbar';
 import Footer from './Footer';
 import * as $ from 'jquery';
-import Industrial from './Industrial';
+import Sidebar from './Sidebar';
 const App = (props) => (
   <div>
   <Router>
   <div>
   <Header/>
+  <Sidebar/>
     <Switch>
       {/* <Redirect exact from="/" to="/help"/> */}
       <Route exact path="/help" component={Help} />
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
-      <Route exact path="/industrial" component={Industrial} />
-      {/* <Route exact path="/industrial/a" component={Industrial} cat='a' /> */}
-      <Route exact path="/industrial/a" render={(props) => ( <Industrial cat="a"/> )} />
       <Route exact path="/services" component={Services} />
       <Route exact path="/portfolio" component={Portfolio} />
       <Route exact path="/contact" component={Contact} />

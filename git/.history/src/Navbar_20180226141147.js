@@ -24,9 +24,6 @@ export default class Header extends React.Component{
       <NavLink to="/about" activeClassName="active">About Us</NavLink>
       </NavItem>
       <NavItem eventKey={2} href="#">
-      <NavLink to="/industrial" activeClassName="active">Industrial</NavLink>
-      </NavItem>
-      <NavItem eventKey={2} href="#">
       <NavLink to="/services" activeClassName="active">Services</NavLink>
       </NavItem>
       <NavItem eventKey={2} href="#">
@@ -37,7 +34,8 @@ export default class Header extends React.Component{
 </Navbar>;
 
 
-    {/* <nav className="navbar navbar-default  navbar-fixed-top">
+{/* */}
+    <nav className="navbar navbar-default  navbar-fixed-top">
       <div className="navigation">
         <div className="container">
           <div className="navbar-header">
@@ -75,7 +73,7 @@ export default class Header extends React.Component{
           </div>
         </div>
       </div>
-    </nav> */}
+    </nav>
   </header>
           //  <div id="breadcrumb">
           //   <div className="container">

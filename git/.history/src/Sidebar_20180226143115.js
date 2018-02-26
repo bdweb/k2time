@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link, NavLink ,IndexLink  } from 'react-router-dom'
-import  {Navbar, Nav, NavItem, MenuItem, NavDropdown}  from 'react-bootstrap';
+import { Sidebar, SidebarItem } from 'react-responsive-sidebar';
 
-export default class Header extends React.Component{
+export default class Sidebar extends React.Component{
   render(){
     return(
 
@@ -22,9 +22,6 @@ export default class Header extends React.Component{
       </NavItem>
       <NavItem eventKey={2} href="#">
       <NavLink to="/about" activeClassName="active">About Us</NavLink>
-      </NavItem>
-      <NavItem eventKey={2} href="#">
-      <NavLink to="/industrial" activeClassName="active">Industrial</NavLink>
       </NavItem>
       <NavItem eventKey={2} href="#">
       <NavLink to="/services" activeClassName="active">Services</NavLink>

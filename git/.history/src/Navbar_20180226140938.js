@@ -8,23 +8,20 @@ export default class Header extends React.Component{
 
       <header>
 
-<Navbar  collapseOnSelect > 
+<Navbar  collapseOnSelect bsClass="navigation">
   <Navbar.Header>
     <Navbar.Brand className="navbar-brand">
     <a href="index.html"><h1><span>Com</span>pany</h1></a>
     </Navbar.Brand>
     <Navbar.Toggle />
   </Navbar.Header>
-  <Navbar.Collapse className="navigation">
+  <Navbar.Collapse>
     <Nav pullRight>
     <NavItem eventKey={2} href="#">
     <NavLink exact  to="/" activeClassName="active">Home</NavLink >
       </NavItem>
       <NavItem eventKey={2} href="#">
       <NavLink to="/about" activeClassName="active">About Us</NavLink>
-      </NavItem>
-      <NavItem eventKey={2} href="#">
-      <NavLink to="/industrial" activeClassName="active">Industrial</NavLink>
       </NavItem>
       <NavItem eventKey={2} href="#">
       <NavLink to="/services" activeClassName="active">Services</NavLink>
@@ -37,7 +34,8 @@ export default class Header extends React.Component{
 </Navbar>;
 
 
-    {/* <nav className="navbar navbar-default  navbar-fixed-top">
+{/* navbar-fixed-top */}
+    <nav className="navbar navbar-default">
       <div className="navigation">
         <div className="container">
           <div className="navbar-header">
@@ -75,7 +73,7 @@ export default class Header extends React.Component{
           </div>
         </div>
       </div>
-    </nav> */}
+    </nav>
   </header>
           //  <div id="breadcrumb">
           //   <div className="container">

@@ -24,9 +24,6 @@ export default class Header extends React.Component{
       <NavLink to="/about" activeClassName="active">About Us</NavLink>
       </NavItem>
       <NavItem eventKey={2} href="#">
-      <NavLink to="/industrial" activeClassName="active">Industrial</NavLink>
-      </NavItem>
-      <NavItem eventKey={2} href="#">
       <NavLink to="/services" activeClassName="active">Services</NavLink>
       </NavItem>
       <NavItem eventKey={2} href="#">

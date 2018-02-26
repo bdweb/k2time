@@ -7,37 +7,52 @@ export default class Header extends React.Component{
     return(
 
       <header>
-
-<Navbar  collapseOnSelect > 
-  <Navbar.Header>
-    <Navbar.Brand className="navbar-brand">
-    <a href="index.html"><h1><span>Com</span>pany</h1></a>
-    </Navbar.Brand>
-    <Navbar.Toggle />
-  </Navbar.Header>
-  <Navbar.Collapse className="navigation">
-    <Nav pullRight>
-    <NavItem eventKey={2} href="#">
-    <NavLink exact  to="/" activeClassName="active">Home</NavLink >
-      </NavItem>
-      <NavItem eventKey={2} href="#">
-      <NavLink to="/about" activeClassName="active">About Us</NavLink>
-      </NavItem>
-      <NavItem eventKey={2} href="#">
-      <NavLink to="/industrial" activeClassName="active">Industrial</NavLink>
-      </NavItem>
-      <NavItem eventKey={2} href="#">
-      <NavLink to="/services" activeClassName="active">Services</NavLink>
-      </NavItem>
-      <NavItem eventKey={2} href="#">
-      <NavLink to="/portfolio" activeClassName="active">Portfolio</NavLink>
-      </NavItem>
-    </Nav>
-  </Navbar.Collapse>
-</Navbar>;
-
-
-    {/* <nav className="navbar navbar-default  navbar-fixed-top">
+    <Navbar navbar bsClass="navbar-fixed-top">
+        <div className="navbar-header">
+                
+            </div>
+    <Navbar.Header bsClass="navbar-header">
+            <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse.collapse">
+                    <span className="sr-only">Toggle navigation</span>
+                    <span className="icon-bar"></span>
+                    <span className="icon-bar"></span>
+                    <span className="icon-bar"></span>
+                </button>
+                <div className="navbar-brand">
+                    <a href="index.html">
+                        <h1>
+                            <span>Com</span>pany</h1>
+                    </a>
+                </div>
+      <Navbar.Toggle />
+    </Navbar.Header>
+    <Navbar.Collapse>
+      <Nav>
+        <NavItem eventKey={1} href="#">
+          Link
+        </NavItem>
+        <NavItem eventKey={2} href="#">
+          Link
+        </NavItem>
+        <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
+          <MenuItem eventKey={3.1}>Action</MenuItem>
+          <MenuItem eventKey={3.2}>Another action</MenuItem>
+          <MenuItem eventKey={3.3}>Something else here</MenuItem>
+          <MenuItem divider />
+          <MenuItem eventKey={3.3}>Separated link</MenuItem>
+        </NavDropdown>
+      </Nav>
+      <Nav pullRight>
+        <NavItem eventKey={1} href="#">
+          Link Right
+        </NavItem>
+        <NavItem eventKey={2} href="#">
+          Link Right
+        </NavItem>
+      </Nav>
+    </Navbar.Collapse>
+  </Navbar>;
+    {/* <nav className="navbar navbar-default navbar-fixed-top">
       <div className="navigation">
         <div className="container">
           <div className="navbar-header">
